@@ -27,8 +27,14 @@
 
 <h2 align="center">Preview</h2>
 
+<p align="center"><strong>Desktop Experience</strong></p> 
 <p align="center">
-  <img src="assets/gifs/catalog-preview.gif" width="400">
+  <img src="assets/gifs/catalog-preview.gif" width="600">
+</p>
+
+<p align="center"><strong>Mobile Experience</strong></p>
+<p align="center">
+  <img src=" " width="250">
 </p>
 
 <!-- COMO ACESSAR -->
