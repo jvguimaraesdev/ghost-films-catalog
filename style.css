@@ -1,0 +1,373 @@
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+:root {
+  --bg: #1c1c1c;
+  --text: #ffffff;
+  --secondary: #cecece;
+  --accent: #7ef9a9;
+}
+
+/* BODY */
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* LOGIN */
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* LOGOTIPO */
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo h1 {
+  font-size: 40px;
+  letter-spacing: 5px;
+}
+
+.logo span {
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: var(--secondary);
+}
+
+/* FANTASMA */
+
+.ghost-area {
+  display: flex;
+  justify-content: center;
+}
+
+#ghost {
+  animation: float 3s ease-in-out infinite;
+}
+
+#ghost svg {
+  width: 180px;
+  transition: 0.3s;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* DISPLAY LOGIN */
+
+.form-area {
+  display: flex;
+}
+
+#loginForm {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#loginForm input {
+  padding: 12px;
+  width: 250px;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  background: #2a2a2a;
+  color: var(--text);
+}
+
+#loginForm input::placeholder {
+  color: var(--secondary);
+}
+
+#loginForm input:focus {
+  box-shadow: 0 0 5px var(--accent);
+}
+
+/* BOTÕES */
+
+#loginForm button {
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background: var(--accent);
+  color: #000000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 5px #7ef9a980;
+}
+
+#loginForm button:hover {
+  transform: scale(1.03);
+}
+
+/* CATÁLOGO */
+
+.catalog {
+  padding: 15px 20px 60px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* BARRA SUPERIOR */
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* FRASE DA BARRA SUPERIOR - CATÁLOGO */
+
+.tagline {
+  color: var(--secondary);
+  font-size: 25px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  opacity: 0;
+  animation: fadeIn 1.2s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* GRADE (PC - PADRÃO) */
+
+.movies {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(170px, 230px));
+  justify-content: center;
+  flex: 1;
+  gap: 12px;
+}
+
+/* CARTÕES */
+
+.movie-card {
+  background: #2a2a2a;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-card img {
+  width: 100%;
+  height: 280px;
+  border-radius: 6px;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #7ef9a980;
+}
+
+.movie-card h3 {
+  margin-top: 8px;
+}
+
+.movie-card p {
+  color: var(--secondary);
+  font-size: 15px;
+}
+
+/* AÇÕES */
+
+.actions {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.actions button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.actions .watch {
+  background: var(--accent);
+  padding: 5px 8px;
+  border-radius: 6px;
+  color: #000000;
+  font-size: 15px;
+}
+
+.actions button.active {
+  transform: scale(1.2);
+  filter: brightness(1.5);
+  border: 2px solid var(--accent);
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.eye-closed {
+  transform: scaleY(0.1);
+  transition: 0.2s ease;
+  transform-origin: center;
+}
+
+/* TRADUÇÃO */
+
+#langToggle {
+  margin-left: 0;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  background: #2a2a2a;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#langToggle:hover {
+  background: var(--accent);
+  color: black;
+}
+
+.footer {
+  text-align: center;
+  color: var(--secondary);
+  padding: 15px 0;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+/* RESPONSIVIDADE MOBILE */
+
+@media (max-width: 768px) {
+
+  .top-bar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 15px;
+    gap: 10px;
+  }
+
+  .logo h1 {
+    font-size: 26px;
+    letter-spacing: 3px;
+  }
+
+  .logo span {
+    font-size: 14px;
+  }
+
+  .tagline {
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+
+  #langToggle {
+    width: 120px;
+    font-size: 14px;
+  }
+
+  .movies {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    flex: 1;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .movie-card {
+    padding: 10px;
+  }
+
+  .movie-card img {
+    width: 100%;
+    height: 250px;
+    border-radius: 6px;
+    object-position: center;
+    object-fit: cover;
+  }
+
+  .movie-card h3 {
+    font-size: 14px;
+  }
+
+  .movie-card p {
+    font-size: 12px;
+  }
+
+  #loginForm input {
+    width: 100%;
+    max-width: 280px;
+    padding: 15px;
+  }
+
+  #loginForm button {
+    padding: 14px;
+    width: 90%;
+    max-width: 280px;
+  }
+
+  .actions {
+    gap: 6px;
+  }
+
+  .actions button {
+    font-size: 18px;
+  }
+
+  .actions .watch {
+    padding: 6px 8px;
+    font-size: 12px;
+  }
+
+  .footer {
+    font-size: 13px;
+    margin-top: 15px;
+  }
+}

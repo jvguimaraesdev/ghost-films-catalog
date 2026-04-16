@@ -1,0 +1,67 @@
+<!doctype html>
+
+<html lang="en">
+
+<!-- TOPO DO PROJETO -->
+
+<head>
+  <meta charset="UTF-8" />
+
+  <!-- ADAPTAÇÃO DE TELA -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Ghost Films</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main class="container">
+
+    <!-- LOGOTIPO -->
+
+    <header class="logo">
+      <h1>GHOST</h1>
+      <span>Films</span>
+    </header>
+
+    <!-- FANSTASMA -->
+
+    <section class="ghost-area">
+      <div id="ghost">
+        <svg viewBox="0 0 100 100">
+          <path d="M50 10
+  C30 10, 20 30, 20 50
+  L20 100
+  L30 85
+  L40 100
+  L50 85
+  L60 100
+  L70 85
+  L80 100
+  L80 50
+  C80 30, 70 10, 50 10Z" fill="#eaeaea" />
+
+          <!-- OLHOS -->
+
+          <circle id="eye-left" cx="40" cy="45" r="5" fill="#000000" />
+          <circle id="eye-right" cx="60" cy="45" r="5" fill="#000000" />
+        </svg>
+      </div>
+    </section>
+
+    <!-- FORMAS -->
+
+    <section class="form-area">
+      <form id="loginForm">
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="password" id="password" placeholder="Password" required />
+        <button type="submit">Login</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
