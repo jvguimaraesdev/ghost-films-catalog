@@ -53,9 +53,10 @@
     <!-- FORMAS -->
 
     <section class="form-area">
-      <form id="loginForm">
-        <input type="email" id="email" placeholder="Email" required />
-        <input type="password" id="password" placeholder="Password" required />
+      <form id="loginForm" autocomplete="off">
+        <input type="email" id="email" placeholder="Email" required autocomplete="off" />
+        <input type="password" id="password" placeholder="Minimum 6 characters" required autocomplete="new-password"
+          minlength="6" />
         <button type="submit">Login</button>
       </form>
     </section>

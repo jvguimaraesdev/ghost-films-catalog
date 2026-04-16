@@ -97,11 +97,20 @@ if (form && email && password && eyeLeft && eyeRight) {
     eyeLeft.classList.remove("eye-closed");
     eyeRight.classList.remove("eye-closed");
   });
+}
 
-  // LOGIN // 
+// LOGIN // 
 
+if (form && email && password) {
   form.addEventListener("submit", (e) => {
     e.preventDefault();
+
+    const emailValue = email.value.trim();
+    const passwordValue = password.value.trim();
+
+    if (!emailValue.includes("@") || passwordValue.length < 6) {
+      return;
+    }
     window.location.href = "catalog.html";
   });
 }

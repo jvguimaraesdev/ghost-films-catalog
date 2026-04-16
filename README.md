@@ -36,13 +36,13 @@
 <h2>How to access</h2>
 
 <p>
-  <strong>EN:</strong> Enter any email address and password to access the project.
-  <strong>Example:</strong> "123@email.com" and password "123".
+  <strong>EN:</strong> Enter any valid email address and a password with at least 6 characters to access the project.
+  <strong>Example:</strong> "user@email.com" and password "123456".
 </p>
 
 <p>
-  <strong>PT:</strong> Digite qualquer e-mail e senha para acessar o projeto.
-  <strong>Exemplo:</strong> "123@email.com" e senha "123".
+  <strong>PT:</strong> Digite qualquer e-mail válido e uma senha com pelo menos 6 caracteres para acessar o projeto.
+  <strong>Exemplo:</strong> "user@email.com" e senha "123456".
 </p>
 
 <!-- SOBRE O PROJETO -->
