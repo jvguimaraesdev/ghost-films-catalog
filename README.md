@@ -87,7 +87,6 @@
     <li>Layout responsivo otimizado para mobile e desktop.</li>
   </ul>
 
-
 <!-- INTERAÇÕES -->
 
 <h2>Interactions</h2>
@@ -101,7 +100,6 @@
     <li>Experience smooth animations when hovering over or clicking movie cards.</li>
   </ul>
 
-
 <p><strong>PT:</strong></p>
   <ul>
     <li>Ao focar no campo de e-mail, o fantasma olha para baixo em direção ao campo;</li>
@@ -110,7 +108,6 @@
     <li>Clique no botão "Assistir" para abrir vídeos externos em uma nova aba;</li>
     <li>Experimente animações suaves ao passar o mouse ou clicar sobre os cartões de filmes.</li>
   </ul>
-
 
 <!-- PROPÓSITO -->
 
