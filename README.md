@@ -34,7 +34,7 @@
 
 <h3 align="center">Mobile Experience</h3>
 <p align="center">
-  <img src="assets/gifs/mobile-preview.gif" width="270">
+  <img src="assets/gifs/mobile-preview.gif" width="260">
 </p>
 
 <!-- COMO ACESSAR -->
