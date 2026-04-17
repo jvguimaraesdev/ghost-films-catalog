@@ -1,6 +1,6 @@
 <!-- TÍTULO -->
 
-<h1 align= "center">👻| Ghost Films</h1>
+<h1 align="center">👻| Ghost Films</h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/PORTFOLIO-PROJECT-7ef9a9">
@@ -27,14 +27,14 @@
 
 <h2 align="center">Preview</h2>
 
-<p align="center"><strong>Desktop Experience</strong></p> 
+<h3 align="center">Desktop Experience</h3>
 <p align="center">
-  <img src="assets/gifs/catalog-preview.gif" width="600">
+  <img src="assets/gifs/desktop-preview.gif" width="600">
 </p>
 
-<p align="center"><strong>Mobile Experience</strong></p>
+<h3 align="center">Mobile Experience</h3>
 <p align="center">
-  <img src=" " width="250">
+  <img src="assets/gifs/mobile-preview.gif" width="270">
 </p>
 
 <!-- COMO ACESSAR -->
@@ -42,13 +42,13 @@
 <h2>How to access</h2>
 
 <p>
-  <strong>EN:</strong> Enter any valid email address and a password with at least 6 characters to access the project.
-  <strong>Example:</strong> "user@email.com" and password "123456".
+  <strong>EN:</strong> Enter a valid email address and a password with at least 6 characters to access the project.
+  <strong>Example:</strong> user@email.com / 123456
 </p>
 
 <p>
-  <strong>PT:</strong> Digite qualquer e-mail válido e uma senha com pelo menos 6 caracteres para acessar o projeto.
-  <strong>Exemplo:</strong> "user@email.com" e senha "123456".
+  <strong>PT:</strong> Para acessar o projeto, insira um e-mail válido e uma senha com pelo menos 6 caracteres.
+  <strong>Exemplo:</strong> user@email.com / 123456
 </p>
 
 <!-- SOBRE O PROJETO -->
@@ -56,15 +56,11 @@
 <h2>About</h2>
 
 <p>
-  <strong>EN:</strong> Ghost Films is a horror movie catalog that features an interactive ghost on the login screen, creating a more immersive initial experience.
-  After signing in, users can browse a curated selection of films, interact with each title through likes and dislikes, and watch original trailers via the “watch” button.
-  The project also allows users to switch between English and Portuguese, improving interface accessibility.
+  <strong>EN:</strong> Ghost Films is a horror movie catalog that features an interactive ghost on the login screen, creating a more immersive experience. After logging in, you can explore a selection of films, interact with each title through likes and dislikes, and watch the original trailers via the "watch" button. The project also allows you to switch between English and Portuguese, improving accessibility.
 </p>
 
 <p>
-  <strong>PT:</strong> Ghost Films é um catálogo de filmes de terror que conta com um fantasma interativo na tela de login, criando uma experiência inicial mais imersiva.
-  Após o acesso, o usuário pode explorar uma seleção de filmes, interagir com cada título por meio de likes e dislikes, além de assistir aos trailers originais pelo botão “assistir”.
-  O projeto também permite alternar entre inglês e português, aumentando a acessibilidade da interface.
+  <strong>PT:</strong> Ghost Films é um catálogo de filmes de terror que conta com um fantasma interativo na tela de login, criando uma experiência mais imersiva. Após o login, é possível explorar uma seleção de filmes, interagir com cada título por meio de likes e dislikes, além de assistir aos trailers originais pelo botão "assistir". O projeto também permite alternar entre inglês e português, melhorando a acessibilidade.
 </p>
 
 <!-- FUNCIONALIDADES -->
@@ -154,7 +150,8 @@ ghost-films-catalog/
 └── assets/
     ├── gifs/
     │   ├── ghost-login-animation.gif
-    │   └── catalog-preview.gif
+    │   ├── desktop-preview.gif
+    │   └── mobile-preview.gif
     └── images/
         └── films/
             ├── movie01.png
